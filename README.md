@@ -258,3 +258,107 @@ const Brand = () => (
 );
 
 export default Brand;
+
+# create WhatGPT3 section
+
+import React from "react";
+
+import Feature from "../../components/feature/Feature";
+import "./whatGPT3.css";
+
+const WhatGPT3 = () => {
+return (
+
+<div className="gpt3__whatgpt3 section__margin" id="wgpt3">
+<div className="gpt3__whatgpt3-feature">
+<Feature
+          title="What is GTP-3"
+          text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by."
+        />
+</div>
+<div className="gpt3__whatgpt3-heading">
+<h1 className="gradient__text">
+The possibilities are beyond our imagination
+</h1>
+<p>Explore Library</p>
+</div>
+<div className="gpt3__whatgpt3-container">
+<Feature
+          title="Chatbots"
+          text="We so opinion friends me message as delight. Whole front do of plate heard oh ought."
+        />
+<Feature
+          title="Knowledgebase"
+          text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
+        />
+<Feature
+          title="Education"
+          text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
+        />
+</div>
+</div>
+);
+};
+
+export default WhatGPT3;
+
+#Features
+import React from "react";
+import { featuresData } from "./featuresData";
+import Feature from "../../components/feature/Feature";
+import "./features.css";
+
+const Features = () => {
+return (
+
+<div className="gpt3__features section__padding" id="features">
+<div className="gpt3__features-heading">
+<h1 className="gradient__text">
+The Future is Now and You Just Need to Realize It.Step into Future
+Today. & Make it Happen{" "}
+</h1>
+<p> Request Early Access to Get Started</p>
+</div>
+<div className="gpt3__features-container">
+{featuresData.map((item, index) => (
+<Feature
+title={item.title}
+text={item.text}
+key={item.title + index}
+/>
+))}
+</div>
+</div>
+);
+};
+
+export default Features;
+
+# Possibilties.js
+
+import React from "react";
+import possibilityImage from "../../assets/possibility.png";
+import "./possibility.css";
+
+const Possibility = () => (
+
+  <div className="gpt3__possibility section__padding" id="possibility">
+    <div className="gpt3__possibility-image">
+      <img src={possibilityImage} alt="possibility" />
+    </div>
+    <div className="gpt3__possibility-content">
+      <h4>Request Early Access to Get Started</h4>
+      <h1 className="gradient__text">
+        The possibilities are <br /> beyond your imagination
+      </h1>
+      <p>
+        Yet bed any for travelling assistance indulgence unpleasing. Not
+        thoughts all exercise blessing. Indulgence way everything joy alteration
+        boisterous the attachment. Party we years to order allow asked of.
+      </p>
+      <h4>Request Early Access to Get Started</h4>
+    </div>
+  </div>
+);
+
+export default Possibility;
